@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <form method="post">
+      {% csrf_token %}
+      <!-- Aquí puedes agregar campos para la información del usuario y el pago -->
+      <label for="first_name">Ingrese nombre tarjeta:</label>
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        required
+      /><br /><br />
+
+      <!-- Otros campos del formulario -->
+      <button type="submit">Place Order</button>
+    </form>
+  </body>
+</html>
